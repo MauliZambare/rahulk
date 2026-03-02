@@ -1,3 +1,5 @@
+//==================  11-------------------------------------------Login Register
+
 import React, { useState } from "react";
 import "./App.css";
 
@@ -223,4 +225,135 @@ export default function App() {
     </div>
   );
 }
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Arial;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* header containner ...  */
+.header {
+  background: black;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer Container */
+
+.footer {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* CENTER CARD */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 0 10px gray;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+}
+
+/* dashboard Container */
+.dashboard {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar Container */
+.sidebar {
+  width: 200px;
+  background: #eee;
+  padding: 20px;
+}
+
+.sidebar p {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.box {
+  background: lightgray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+
+/* Notofication Container */
+.notification {
+  background: lightblue;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
 
